@@ -97,7 +97,7 @@ const bindEventPlay = function(audio) {
 	let a0 = function() {
 		log('播放')
 		audio.play()
-		audio.playbackRate = 10
+		audio.playbackRate = 1
 		showSongInformation(audio)
 	}
 	let a1 = function() {
@@ -119,7 +119,7 @@ const bindEventPlay = function(audio) {
 const bindEventCanplay = function(audio) {
 	audio.addEventListener('canplay', function() {
 		audio.play()
-		audio.playbackRate = 10
+		audio.playbackRate = 1
 		showSongInformation(audio)
 
 	})
